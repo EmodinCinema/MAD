@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To do list Vue Grabovskiy</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <h2 class="text">Чек лист</h2>
+                <div class="add_task">
+                    <div class="add_task_input">
+                        <input type="text" v-model="new_task.title" placeholder="Задача" class="inputzad">
+                        <textarea type="text" v-model="new_task.desc" placeholder="Описание" class="inputop"></textarea>
+                    </div>
+                    <button class="addbnt" @click="add_task(index)" class="add_task_button">➕</button>
+                </div>
+            <task class="deletbnt" @task_done="delete_task(index)" :data= "data" v-for="(data, index) in tasks" :key="index">
+            </task> 
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

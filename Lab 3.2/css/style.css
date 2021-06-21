@@ -1,0 +1,55 @@
+.container{
+    cursor: pointer;
+    user-select: none;
+    /* font-family: "Molot"; */
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width:400px;
+    background-color:#ac1b42;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.text{
+    text-align: center;
+    color:cornsilk;
+}
+input{
+    width: 380px;
+    height: 30px;
+    margin: 5px;
+    font-size: 15px;
+    
+}
+textarea{
+    width: 380px;
+    height: 80px;
+    margin: 5px;
+}
+.inputzad{
+    font-size: 15px;
+}
+.inputop{
+    font-size: 13px;
+}
+.new_task{
+background-color: burlywood;
+}
+.task{
+    flex-direction: row;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: space-between;
+    margin: 20px 0;
+    background-color:#c9f76F;
+    border-radius: 5px;
+    width: 390px;
+    
+}
+button{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
